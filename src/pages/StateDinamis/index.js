@@ -1,9 +1,9 @@
-import React, {useState} from 'react';;
-import {View, Text, StyleSheet, Button} from 'react-native';;
+import React, {useState} from 'react';
+import {View, Text, StyleSheet, Button} from 'react-native';
 
 const Counter = () => {
   const [number, SetNumber] = useState(0);
-  return  (
+  return (
     <View>
       <Text style={styles.textCount}>{number}</Text>
       <Button
@@ -18,16 +18,16 @@ const Counter = () => {
 
 class CounterClass extends React.Component {
   state = {
-    number: 0,,
+    number: 0,
   };
   render() {
-    return  (
+    return (
       <View>
         <Text style={styles.textCount}>{this.state.number}</Text>
         <Button
           title="Tambah"
           onPress={() => {
-            this.setState({number: this.state.number + 1});;
+            this.setState({number: this.state.number + 1});
           }}
         />
       </View>
@@ -46,7 +46,7 @@ const StateDinamis = () => {
       <CounterClass />
       <CounterClass />
     </View>
-  );;
+  );
 };
 
 const styles = StyleSheet.create({
