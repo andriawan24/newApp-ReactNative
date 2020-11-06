@@ -1,11 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { ScrollView } from 'react-native';
+import React, {useState, useEffect} from 'react';
+import {ScrollView} from 'react-native';
 import SampleComponent from './pages/SampleComponent';
 import Styling from './pages/Styling';
 import FlexBox from './pages/FlexBox';
 import PositionReactNative from './pages/PositionReactNative';
 import PropsDinamis from './pages/PropsDinamis';
 import StateDinamis from './pages/StateDinamis';
+import Communication from './pages/Communication';
+import ReactNativeSvg from './pages/ReactNativeSvg';
+import BasicJavascript from './pages/BasicJavascript';
 
 const App = () => {
   const [isShow, setIsShow] = useState(true);
@@ -16,12 +19,15 @@ const App = () => {
   // }, []);
   return (
     <ScrollView>
-      {/* <SampleComponent />
-      <Styling /> */}
+      {/* <SampleComponent /> */}
+      {/* <Styling /> */}
       {/* {isShow && <FlexBox />} */}
       {/* <PositionReactNative /> */}
       {/* <PropsDinamis /> */}
-      <StateDinamis />
+      {/* <StateDinamis /> */}
+      {/* <Communication /> */}
+      {/* <ReactNativeSvg /> */}
+      <BasicJavascript />
     </ScrollView>
   );
 };
